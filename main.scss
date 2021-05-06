@@ -1,0 +1,25 @@
+// Media Query Mixin
+
+@mixin breakpoint($breakpoint) {
+  @media screen and(max-width: $breakpoint) {
+    @content;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("background.jpg");
+}
