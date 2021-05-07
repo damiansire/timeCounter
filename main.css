@@ -153,9 +153,15 @@ header .content .countdown {
 
 header .content .countdown .minutesAndSecond .minutes,
 header .content .countdown .minutesAndSecond .seconds {
-  font-size: 36px;
   font-weight: 700;
   color: #bbbbbb;
+}
+
+@media screen and (max-width: 480px) {
+  header .content .countdown .minutesAndSecond .minutes,
+  header .content .countdown .minutesAndSecond .seconds {
+    font-size: 36px;
+  }
 }
 
 header .content .countdown .hoursAndDays {
