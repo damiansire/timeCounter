@@ -22,8 +22,9 @@ function tick() {
     let seconds = Math.floor((missingTime % (1000 * 60)) / 1000);
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    let timeString = `${days} : ${hours} : ${mins} : ${seconds}`;
-
-    document.querySelector(".countdown").innerText = timeString;
+    document.querySelector(".days").innerText = days;
+    document.querySelector(".hours").innerText = hours;
+    document.querySelector(".minutes").innerText = mins;
+    document.querySelector(".seconds").innerText = seconds;
   }
 }

@@ -49,35 +49,36 @@ header .content {
 
 header .content h1 {
   color: #fff;
-  font-size: 28px;
+  font-size: 50px;
   font-weight: 900;
+  text-align: center;
 }
 
 header .content h1 span {
   font-weight: 400;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   header .content h1 {
-    font-size: 36px;
+    font-size: 48px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   header .content h1 {
     font-size: 42px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   header .content h1 {
     font-size: 56px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1280px) {
   header .content h1 {
-    font-size: 72px;
+    font-size: 90px;
   }
 }
 
@@ -85,30 +86,31 @@ header .content h2 {
   color: #fff;
   font-size: 42px;
   font-weight: 900;
-  margin: 30px 0px;
+  text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   header .content h2 {
-    font-size: 56px;
+    font-size: 35px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   header .content h2 {
     font-size: 72px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   header .content h2 {
     font-size: 96px;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
   header .content h2 {
-    font-size: 96px;
+    font-size: 70px;
+    margin-top: -15px;
   }
 }
 
@@ -116,29 +118,53 @@ header .content .countdown {
   color: #fff;
   font-size: 36px;
   font-weight: 400;
+  text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   header .content .countdown {
-    font-size: 42px;
+    font-size: 25px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   header .content .countdown {
     font-size: 56px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   header .content .countdown {
     font-size: 72px;
   }
 }
 
-@media screen and (max-width: 128px) {
+@media screen and (min-width: 1280px) {
   header .content .countdown {
     font-size: 80px;
   }
+}
+
+@media screen and (max-width: 480px) {
+  header .content .countdown .minutesAndSecond {
+    font-size: 25px;
+  }
+}
+
+header .content .countdown .minutesAndSecond .minutes,
+header .content .countdown .minutesAndSecond .seconds {
+  font-size: 36px;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+
+header .content .countdown .hoursAndDays {
+  margin: 30px 0;
+}
+
+header .content .countdown .hoursAndDays .days,
+header .content .countdown .hoursAndDays .hours {
+  font-weight: 700;
+  color: #bbbbbb;
 }
 /*# sourceMappingURL=main.css.map */

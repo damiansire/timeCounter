@@ -1,7 +1,7 @@
 // Media Query Mixin
 
 @mixin breakpoint($breakpoint) {
-  @media screen and(max-width: $breakpoint) {
+  @media screen and(min-width: $breakpoint) {
     @content;
   }
 }
@@ -43,15 +43,14 @@ header {
     z-index: 1;
     h1 {
       color: #fff;
-      font-size: 28px;
+      font-size: 50px;
       font-weight: 900;
-
+      text-align: center;
       span {
         font-weight: 400;
       }
-
       @include breakpoint(480px) {
-        font-size: 36px;
+        font-size: 48px;
       }
       @include breakpoint(768px) {
         font-size: 42px;
@@ -59,8 +58,8 @@ header {
       @include breakpoint(1024px) {
         font-size: 56px;
       }
-      @include breakpoint(1024px) {
-        font-size: 72px;
+      @include breakpoint(1280px) {
+        font-size: 90px;
       }
     }
 
@@ -68,9 +67,10 @@ header {
       color: #fff;
       font-size: 42px;
       font-weight: 900;
-      margin: 30px 0px;
+      text-align: center;
+
       @include breakpoint(480px) {
-        font-size: 56px;
+        font-size: 35px;
       }
       @include breakpoint(768px) {
         font-size: 72px;
@@ -79,7 +79,8 @@ header {
         font-size: 96px;
       }
       @include breakpoint(1280px) {
-        font-size: 96px;
+        font-size: 70px;
+        margin-top: -15px;
       }
     }
 
@@ -87,9 +88,10 @@ header {
       color: #fff;
       font-size: 36px;
       font-weight: 400;
+      text-align: center;
 
       @include breakpoint(480px) {
-        font-size: 42px;
+        font-size: 25px;
       }
       @include breakpoint(768px) {
         font-size: 56px;
@@ -97,8 +99,30 @@ header {
       @include breakpoint(1024px) {
         font-size: 72px;
       }
-      @include breakpoint(128px) {
+      @include breakpoint(1280px) {
         font-size: 80px;
+      }
+
+      .minutesAndSecond {
+        @media screen and(max-width: 480px) {
+          font-size: 25px;
+        }
+        .minutes,
+        .seconds {
+          font-size: 36px;
+          font-weight: 700;
+          color: #bbbbbb;
+        }
+      }
+
+      .hoursAndDays {
+        margin: 30px 0;
+
+        .days,
+        .hours {
+          font-weight: 700;
+          color: #bbbbbb;
+        }
       }
     }
   }
