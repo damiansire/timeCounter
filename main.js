@@ -1,5 +1,5 @@
 //Objetive date
-let finalDate = new Date("May 15 2021 07:00").getTime();
+let finalDate = new Date("Jun 11 2021 07:00").getTime();
 
 let timer = setInterval(tick, 1000);
 
